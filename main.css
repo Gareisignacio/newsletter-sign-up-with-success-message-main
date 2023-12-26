@@ -28,7 +28,7 @@ body {
   padding: 1em 1em;
   display: flex; }
   .front-container .sign-up-text {
-    padding: 4.5em 3em; }
+    padding: 4em 3em; }
     .front-container .sign-up-text h1 {
       font-size: 3rem; }
     .front-container .sign-up-text p {
@@ -36,31 +36,83 @@ body {
       font-size: 14px;
       width: 90%; }
     .front-container .sign-up-text .list {
-      font-size: 14px; }
-      .front-container .sign-up-text .list ul li {
-        list-style-image: url("assets/images/icon-list.svg");
-        padding-bottom: 5px;
-        margin-left: 2em;
-        padding-left: .7em; }
-    .front-container .sign-up-text .form p {
-      padding-bottom: 0; }
-    .front-container .sign-up-text .form .email-box {
+      font-size: 14px;
+      margin: .75em 0em; }
+      .front-container .sign-up-text .list ul {
+        list-style-image: url("assets/images/icon-list.svg"); }
+        .front-container .sign-up-text .list ul li {
+          padding-bottom: 5px;
+          margin-left: 2em;
+          padding-left: .7em;
+          line-height: 1.5em; }
+    .front-container .sign-up-text .form label {
+      padding-bottom: 0em;
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      height: 1.5em;
+      font-size: 13px;
+      font-weight: 700; }
+      .front-container .sign-up-text .form label .invalid-email {
+        width: fit-content;
+        color: #cf7074;
+        visibility: hidden; }
+    .front-container .sign-up-text .form #email {
       width: 90%;
       height: 3em;
       border-radius: 5px;
       margin-bottom: 1em;
-      padding: 0 1em; }
-    .front-container .sign-up-text .form button {
+      padding: 0 1em;
+      border: .5px solid gray; }
+    .front-container .sign-up-text .form #sub-btn {
       width: 90%;
       height: 3em;
       border-radius: 5px;
       background: var(--color-principal);
-      color: white; }
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none; }
   .front-container .sign-up-img img {
     height: 75vh; }
 
 .back-container {
+  background: white;
   position: absolute;
+  width: 28%;
+  height: 60vh;
+  left: 70%;
+  top: 18vh;
+  border-radius: 25px;
+  padding: 3em;
   display: none; }
+  .back-container img {
+    width: 3em;
+    height: 3em;
+    margin-bottom: 1.5em; }
+  .back-container h1 {
+    font-size: 2.5em; }
+  .back-container p {
+    margin: 1.5em 0em;
+    font-size: 12px;
+    line-height: 18px; }
+    .back-container p span {
+      font-weight: bold; }
+  .back-container button {
+    width: 100%;
+    background-color: var(--color-secundario);
+    color: white;
+    height: 3em;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer; }
+
+.visible {
+  visibility: visible !important; }
+
+.invalid-box {
+  background: #ffe8e6 !important;
+  color: #cf7074 !important; }
 
 /*# sourceMappingURL=main.css.map */

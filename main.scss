@@ -24,14 +24,14 @@ body{
    position: absolute;
    width:60%;
    height: 80vh;
-   left: 20%;
+   left:20%;
    top: 5vh;
    border-radius: 25px;
    padding: 1em 1em;
    display: flex;
 
    .sign-up-text{
-      padding: 4.5em 3em;
+      padding: 4em 3em;
       h1{
          font-size: 3rem;
       }
@@ -42,32 +42,50 @@ body{
       }
       .list{
          font-size: 14px;
+         margin: .75em 0em;
          ul{
+            list-style-image: url("assets/images/icon-list.svg") ;
             li{
-               list-style-image: url("assets/images/icon-list.svg");
                padding-bottom: 5px;
                margin-left: 2em;
-               padding-left: .7em;
+               padding-left: .7em;     
+               line-height: 1.5em;
             }
          }
       }
       .form{
-         p{
-            padding-bottom: 0;
+         label{
+            padding-bottom: 0em;
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            height: 1.5em;
+            font-size: 13px;
+            font-weight: 700;
+            .invalid-email{
+               width: fit-content;
+               color: rgb(207,112,116);
+               visibility: hidden;
+            }
          }
-         .email-box{
+         #email{
             width: 90%;
             height: 3em;
             border-radius: 5px;
             margin-bottom: 1em;
             padding: 0 1em;
+            border: .5px solid gray;
+
          }
-         button{
+         #sub-btn{
             width: 90%;
             height: 3em;
             border-radius: 5px;
             background: var(--color-principal);
             color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
          }
       }
    }
@@ -78,6 +96,47 @@ body{
    }
 }
 .back-container{
+   background: white;
    position: absolute;
+   width:28%;
+   height: 60vh;
+   left: 70%;
+   top: 18vh;
+   border-radius: 25px;
+   padding: 3em; 
    display: none;
+   img{
+      width: 3em;
+      height: 3em;
+      margin-bottom: 1.5em;
+   }
+   h1{
+      font-size: 2.5em;
+   }
+   p{
+      margin: 1.5em 0em;
+      font-size: 12px;
+      line-height: 18px;
+      span{
+         font-weight: bold;
+      }
+   }
+   button{
+      width: 100%;
+      background-color: var(--color-secundario);
+      color: white;
+      height: 3em;
+      border-radius: 5px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+   }
+}
+
+.visible{
+   visibility: visible !important;
+}
+.invalid-box{
+   background: rgb(255,232,230) !important;
+   color: rgb(207,112,116) !important;
 }
