@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --color-principal: hsl(234, 29%, 20%);
+  --color-secundario: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --Tomato: hsl(4, 100%, 67%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: var(--color-principal);
+  color: var(--color-principal);
+  position: relative;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }
+
+.front-container {
+  background: white;
+  position: absolute;
+  width: 60%;
+  height: 80vh;
+  left: 20%;
+  top: 5vh;
+  border-radius: 25px;
+  padding: 1em 1em;
+  display: flex; }
+  .front-container .sign-up-text {
+    padding: 4.5em 3em; }
+    .front-container .sign-up-text h1 {
+      font-size: 3rem; }
+    .front-container .sign-up-text p {
+      padding: 1em 0em;
+      font-size: 14px;
+      width: 90%; }
+    .front-container .sign-up-text .list {
+      font-size: 14px; }
+      .front-container .sign-up-text .list ul li {
+        list-style-image: url("assets/images/icon-list.svg");
+        padding-bottom: 5px;
+        margin-left: 2em;
+        padding-left: .7em; }
+    .front-container .sign-up-text .form p {
+      padding-bottom: 0; }
+    .front-container .sign-up-text .form .email-box {
+      width: 90%;
+      height: 3em;
+      border-radius: 5px;
+      margin-bottom: 1em;
+      padding: 0 1em; }
+    .front-container .sign-up-text .form button {
+      width: 90%;
+      height: 3em;
+      border-radius: 5px;
+      background: var(--color-principal);
+      color: white; }
+  .front-container .sign-up-img img {
+    height: 75vh; }
+
+.back-container {
+  position: absolute;
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
