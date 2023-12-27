@@ -1,0 +1,88 @@
+.front-container{
+   background: white;
+   position: absolute;
+   width:60%;
+   height: 80vh;
+   left:20%;
+   top: 5vh;
+   border-radius: 25px;
+   padding: 1em 1em;
+   display: flex;
+
+   .sign-up-text{
+      padding: 4em 3em;
+      h1{
+         font-size: 3rem;
+      }
+      p{
+         padding: 1em 0em;
+         font-size: 14px;
+         width: 90%;
+      }
+      .list{
+         font-size: 14px;
+         margin: .75em 0em;
+         ul{
+            list-style-image: url("assets/images/icon-list.svg") ;
+            li{
+               padding-bottom: 5px;
+               margin-left: 2em;
+               padding-left: .7em;     
+               line-height: 1.5em;
+            }
+         }
+      }
+      .form{
+         label{
+            padding-bottom: 0em;
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            height: 1.5em;
+            font-size: 13px;
+            font-weight: 700;
+            .invalid-email{
+               width: fit-content;
+               color: var(--tomato);
+               visibility: hidden;
+            }
+         }
+         #email{
+            width: 90%;
+            height: 3em;
+            border-radius: 5px;
+            margin-bottom: 1em;
+            padding: 0 1em;
+            border: .5px solid gray;
+
+         }
+         #sub-btn{
+            width: 90%;
+            height: 3em;
+            border-radius: 5px;
+            background: var(--color-principal);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+         }
+      }
+   }
+   .sign-up-img{
+      height: 100%;
+      width: 50%;
+      background-image: url("assets/images/illustration-sign-up-desktop.svg");
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      
+   }
+}
+
+.visible{
+   visibility: visible !important;
+}
+.invalid-box{
+   background-color: var(--tomato-light);
+   border-color: var(--tomato);
+   color: var(--tomato)!important;
+}

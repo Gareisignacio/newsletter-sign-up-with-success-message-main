@@ -15,17 +15,20 @@ subsBtn.addEventListener("click", ()=>{
       const frontCont = document.querySelector(".front-container");
       const backCont = document.querySelector(".back-container");
    
-      console.log("valido")
-         // frontCont.style = "display: none"
-         // backCont.style = "display: block"
-      alert("valido")
+      frontCont.style = "display: none"
+      backCont.style = "display: block"
    } else {
       let invalidEmail = document.querySelector(".invalid-email");
       invalidEmail.classList.add("visible")
+      
       let inputBox = document.querySelector("#email");
       inputBox.classList.add("invalid-box")
    }
 });
+
+dissBtn.addEventListener("click", ()=>{
+   location.reload()
+})
 
 
 
